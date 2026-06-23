@@ -24,7 +24,7 @@ Includes a web dashboard for managing wards, beds, doctors, nurses, and patients
 ## Database Schema
 Tables: `Ward`, `Bed`, `CareUnit`, `Doctor`, `Consultant`, `Nurse`, `Patient`, `Complaint`, `Treatment`, `MedicalHistory`, `PrevExperience`, `PerfGrade`
 
-## Run Locally (One Command)
+## Run Locally
 
 **Requirements:** Docker Desktop installed and running.
 
@@ -39,6 +39,8 @@ docker-compose up --build
 Then open: **http://localhost:8080/ivor_hospital**
 
 ## Docker Hub
+Pull the pre-built image directly:
+
 ```bash
 docker pull aliammar572/ivor-hospital-web:latest
 ```
