@@ -43,4 +43,28 @@ Pull the pre-built image directly:
 
 ```bash
 docker pull aliammar572/ivor-hospital-web:latest
+
+
 ```
+## Run Without Cloning
+
+If you just want to run the app without the full source code:
+
+**1. Download these 3 files from this repo:**
+- `docker-compose.hub.yml`
+- `init-db.sh`
+- `ivor_hospital_ddl.sql`
+
+**2. Create a `.env` file:**
+```bash
+SA_PASSWORD=Admin123!
+DB_USER=sa
+DB_NAME=IvorHospital
+```
+
+**3. Run:**
+```bash
+docker-compose -f docker-compose.hub.yml up
+```
+
+Then open: **http://localhost:8080/ivor_hospital**
